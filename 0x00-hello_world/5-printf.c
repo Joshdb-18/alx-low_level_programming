@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * my_function - my main func
- *
- * Return: 0 after exiting
+ * main - prints a word
+ * @parameter: description of para
+(* blank line
+ * Description: Print something out in C
+ * Return: 0
  */
 
 int main(void)
