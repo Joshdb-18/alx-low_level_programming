@@ -1,9 +1,8 @@
-/**
- *  Print some words in C
- */
 #include <stdio.h>
 /**
- * main func
+ * my_function - my main func
+ *
+ * Return: 0 before exiting code
  */
 int main(void)
 {
