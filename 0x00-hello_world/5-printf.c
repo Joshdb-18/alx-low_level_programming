@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
  * main - prints a word
- * @parameter: description of para
-(* blank line
  * Description: Print something out in C
  * Return: 0
  */
