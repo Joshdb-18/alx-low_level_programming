@@ -2,7 +2,9 @@
  *  Print some words in C
  */
 #include <stdio.h>
-
+/**
+ * main func
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
