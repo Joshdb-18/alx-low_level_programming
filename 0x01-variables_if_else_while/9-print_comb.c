@@ -17,8 +17,11 @@ int main(void)
 		{
 			putchar(d);
 		}
-		putchar(c);
-		putchar(' ');
+		else
+		{
+			putchar(c);
+			putchar(' ');
+		}
 	}
 
 	return (0);
