@@ -6,13 +6,11 @@
  */
 int main(void)
 {
-	long n = 0123456789;
-	int p = '\n';
+	int num;
 
-	while(n != 0)
-		putchar((n % 10) + '0');
-		n = n / 10;
-	putchar(p);
+	for (num = 0; num <= 9; num++)
+		putchar(num + '0');
+	putchar('10');
 
 	return (0);
 }
