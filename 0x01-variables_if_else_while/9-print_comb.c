@@ -10,10 +10,11 @@ int main(void)
 	int c = 44;
 	int ne = '\n';
 	int d = 36;
-	
+
 	for (n = 0; n <= 9; n++)
 	{
 		putchar(n + '0');
+		putchar(' ');
 		putchar(c);
 	}
 	putchar(d);
