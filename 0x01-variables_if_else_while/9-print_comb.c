@@ -7,7 +7,7 @@
 int main(void)
 {
 	int n = 0;
-	char c[2] =", ";
+	char c =',';
 	char ne = '\n';
 	char d = '$';
 	
