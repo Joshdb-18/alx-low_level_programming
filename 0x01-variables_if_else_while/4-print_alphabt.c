@@ -8,6 +8,7 @@ int main(void)
 {
 	char c = 'a';
 	char n = '\n';
+
 	for (c = 'a'; c <= 'z'; c++)
 		if (c == 'q' || c == 'e')
 			continue;
