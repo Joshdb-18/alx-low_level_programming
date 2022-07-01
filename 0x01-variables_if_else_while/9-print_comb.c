@@ -15,10 +15,12 @@ int main(void)
 	{
 		putchar(n + '0');
 		putchar(' ');
-		putchar(c);
+		if (n < 9)
+		{
+			putchar(c);
+		}
+		putchar(d);
 	}
-	putchar(d);
-	putchar(ne);
 
 	return (0);
 }
