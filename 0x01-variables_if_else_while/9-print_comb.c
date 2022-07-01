@@ -14,9 +14,9 @@ int main(void)
 	for (n = 0; n <= 9; n++)
 	{
 		putchar(n + '0');
-		putchar(c + '0');
+		putchar(c);
 	}
-	putchar(d + '0');
+	putchar(d);
 	putchar(ne);
 
 	return (0);
