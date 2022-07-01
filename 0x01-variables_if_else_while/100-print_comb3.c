@@ -6,20 +6,26 @@
  */
 int main(void)
 {
-	int num = 0;
-	int c = 44;
+	int digit1, digit2;
 
-	for (num = 0; num <= 90; num++)
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-		putchar(num + '0');
-		if (num == 89)
-			putchar('\n');
-		else
+		for (digit2 = digit1 + 1;digit2 < 10; digit2++)
 		{
-			putchar(c);
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 8 && digit2 == 9)
+			{
+				continue;
+			}
+
+			putchar(',');
 			putchar(' ');
 		}
 	}
+
+	putchar('\n');
 
 	return (0);
 }
