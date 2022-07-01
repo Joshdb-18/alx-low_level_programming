@@ -13,3 +13,6 @@ int main(void)
 		putchar((n % 10) + '0');
 		n = n / 10;
 	putchar(p);
+
+	return (0);
+}
