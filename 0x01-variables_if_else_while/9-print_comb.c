@@ -8,7 +8,6 @@ int main(void)
 {
 	int n = 0;
 	int c = 44;
-	int ne = '\n';
 	int d = 36;
 
 	for (n = 0; n <= 9; n++)
