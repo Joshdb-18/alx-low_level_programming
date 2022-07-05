@@ -1,14 +1,20 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - prints func
+ * print_alphabet_x10 - prints func
  * Return: 0
  */
-void print_alphabet_x10(void);
-
-int main(void)
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
+	char c = 'a';
+	int num;
 
-	return(0);
+	for (num = 0; num < 10; num++)
+	{
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+		_putchar('\n');
+	}
 }
