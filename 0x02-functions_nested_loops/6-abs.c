@@ -2,10 +2,12 @@
 #include <stdlib.h>
 /**
  * _abs - absolute integer
+ * @n: para
  * Description: blabla
  * Return: 0
  */
-int _abs(int)
+int _abs(int n)
 {
-	abs();
+	abs(n);
+	return (n);
 }
