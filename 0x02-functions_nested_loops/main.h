@@ -1,4 +1,4 @@
-int _putchar(int c)
+void _putchar(int c)
 {
-	return (c);
+	putchar(c);
 }
