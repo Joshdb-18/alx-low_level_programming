@@ -1,4 +1,5 @@
+#include <stdio.h>
 void _putchar(int c)
 {
-	puts(c);
+	putchar(c);
 }
