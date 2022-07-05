@@ -23,18 +23,3 @@ int main(void)
 
 	return (0);
 }
-/**
- * _isalpha - caps
- * Return: 1 0r 0
- */
-int _isalpha(int c)
-{
-	if (isalpha(c) || islower(c) || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-}
