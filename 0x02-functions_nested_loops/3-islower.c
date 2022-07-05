@@ -21,7 +21,10 @@ int main(void)
 
 	return (0);
 }
-
+/**
+ * _islower - lower
+ * Return: 0 or 1
+ */
 int _islower(int c)
 {
 	if (islower(c))

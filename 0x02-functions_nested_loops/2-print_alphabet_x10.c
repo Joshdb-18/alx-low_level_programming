@@ -2,7 +2,6 @@
 #include "main.h"
 /**
  * main - prints func
- * print_alphabet_x10
  * Return: 0
  */
 void print_alphabet_x10(void);
@@ -13,7 +12,10 @@ int main(void)
 
 	return(0);
 }
-
+/**
+ * print_alphabet_x10 - alphabet
+ * Return: void
+ */
 void print_alphabet_x10(void)
 {
 	char c = 'a';
