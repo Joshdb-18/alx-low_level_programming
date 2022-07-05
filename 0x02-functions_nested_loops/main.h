@@ -1,5 +1,5 @@
 #include <stdio.h>
-void _putchar(char n)
+void _putchar(int n)
 {
-	printf("%c", n);
+	putchar(n);
 }
