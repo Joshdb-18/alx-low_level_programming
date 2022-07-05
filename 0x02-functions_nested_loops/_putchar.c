@@ -42,3 +42,15 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 	}
 }
+
+int _islower(int c)
+{
+	if (islower(c))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
