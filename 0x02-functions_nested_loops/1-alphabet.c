@@ -3,7 +3,7 @@
 /** main - check code
  * Return: 0
  */
-void print_alphabet(void);
+void print_alphabet(char*);
 
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
  * print_alphabet - print alphabets
  * Return: void
  */
-void print_alphabet(void)
+void print_alphabet(char*)
 {
 	char n = 'a';
 
