@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <unistd.h>
 
-void _putchar(int n)
+int _putchar(char c)
 {
-	putchar(n);
+	return (write(1, &c, 1));
 }
 
 void print_alphabet(void)
