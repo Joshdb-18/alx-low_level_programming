@@ -11,17 +11,3 @@ int main(void)
 
 	return (0);
 }
-/**
- * print_alphabet - print alphabets
- * Return: void
- */
-void print_alphabet(void)
-{
-	char n = 'a';
-
-	for (n = 'a'; n <= 'z'; n++)
-	{
-		_putchar(n);
-	}
-	_putchar('\n');
-}

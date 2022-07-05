@@ -1,6 +1,15 @@
 #include <stdio.h>
-int _putchar(int n)
+void _putchar(int n)
 {
 	putchar(n);
-	return (0);
+}
+void print_alphabet(void)
+{
+	char n = 'a';
+
+	for(n = 'a'; n <= 'z'; n++)
+	{
+		putchar(n);
+	}
+	putchar('\n');
 }
