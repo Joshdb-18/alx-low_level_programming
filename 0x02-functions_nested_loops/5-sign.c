@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_sign - func
- * @c: prints something
+ * @n: prints something
  * Descroption: something done
  * Return: 0
  */
