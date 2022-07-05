@@ -7,8 +7,21 @@
 
 void print_to_98(int n)
 {
-	for (n = n; n <= 98; n++)
+	int num = n;
+	int p;
+
+	if (num < 98)
 	{
-		_putchar(n + '0');
+		for (p = num; p <= 98; p++)
+		{
+			_putchar(p);
+		}
+	}
+	else if (num > 98)
+	{
+		for (p = num; p > 98; p--)
+		{
+			_putchar(p);
+		}
 	}
 }
