@@ -15,6 +15,8 @@ void print_to_98(int n)
 		for (p = num; p <= 98; p++)
 		{
 			_putchar((p % 10) + '0');
+			if (p == 8)
+				continue;
 			_putchar(',');
 			_putchar(' ');
 		}
@@ -24,6 +26,8 @@ void print_to_98(int n)
 		for (p = num; p > 98; p--)
 		{
 			_putchar((p % 10) + '0');
+			if (p == 8)
+				continue;
 			_putchar(',');
 			_putchar(' ');
 		}
