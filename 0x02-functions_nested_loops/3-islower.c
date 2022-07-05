@@ -2,6 +2,8 @@
 #include <ctype.h>
 /**
  * _islower - islower func
+ * @c: character to print
+ * Description: prints something
  * Return: 0 or 1
  */
 int _islower(int c)
