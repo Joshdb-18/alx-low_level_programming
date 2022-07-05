@@ -1,5 +1,4 @@
-#include <stdio.h>
-void _putchar(void)
+void _putchar(int n)
 {
-	putchar();
+	putchar(n);
 }
