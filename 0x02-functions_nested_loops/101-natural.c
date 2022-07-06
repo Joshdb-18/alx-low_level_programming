@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int sum3 = 0, sum5 = 0;
+	int sum3 = 0, sum5 = 0, sum21 = 0;
 	int i;
 
 	for (i = 0; i < 1024; i++)
@@ -18,8 +18,12 @@ int main(void)
 		{
 			sum5 += i;
 		}
+		if (i % 21 == 0)
+		{
+			sum21 += i;
+		}
 	}
-	printf("%d\n", sum3 + sum5);
+	printf("%d\n", sum3 + sum5- sum21);
 
 	return (0);
 }
