@@ -15,11 +15,11 @@ int main(void)
 	/**
 	 * while (i < 10)
 	 * {
-	 * 	putvhar(i);
+	 * 	putchar(i);
 	 * }
 	 */
 
-	printf("Infinite loop avoided \\o/\n");
+	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
 }
