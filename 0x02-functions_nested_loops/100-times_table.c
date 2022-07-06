@@ -4,7 +4,7 @@
  * @n: n at
  * Return: 0
  */
-void print_tiimes_table(int n)
+void print_times_table(int n)
 {
 	int num, mult, prod;
 
