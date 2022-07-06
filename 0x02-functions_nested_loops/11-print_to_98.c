@@ -7,33 +7,19 @@
 
 void print_to_98(int n)
 {
-	int num = n;
-	int p;
-
-	if (num < 98)
+	if (n <= 98)
 	{
-		for (p = num; p <= 98; p++)
+		for (n = n; n <= 97; n++)
 		{
-			_putchar((p % 10) + '0');
-			if (p == 8)
-				continue;
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	else if (num > 98)
-	{
-		for (p = num; p > 98; p--)
-		{
-			_putchar((p % 10) + '0');
-			if (p == 8)
-				continue;
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", n);
 		}
 	}
 	else
 	{
-		_putchar(98 + '0');
+		for (n = n; n > 98; n--)
+		{
+			printf("%d, ", n);
+		}
 	}
+	printf("98\n");
 }
