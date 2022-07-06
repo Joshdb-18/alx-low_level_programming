@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - test if a number is 0
+ * main - test if a number is zero
  * Return: 0
  */
 int main(void)
