@@ -8,7 +8,7 @@ int main(void)
 	unsigned long fib = 0, fib1 = 1, sum;
 	float total;
 
-	while(1)
+	while (1)
 	{
 		sum = fib + fib1;
 		if (sum > 4000000)
