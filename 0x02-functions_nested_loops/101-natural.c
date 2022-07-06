@@ -18,12 +18,12 @@ int main(void)
 		{
 			sum5 += i;
 		}
-		if (i % 21 == 0)
+		if (i % 15 == 0)
 		{
 			sum21 += i;
 		}
 	}
-	printf("%d\n", sum3 + sum5- sum21);
+	printf("%d\n", sum3 + sum5 - sum21);
 
 	return (0);
 }
