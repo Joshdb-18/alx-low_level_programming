@@ -10,11 +10,11 @@ int main(void)
 
 	while (number != 1)
 	{
-		if (number % 1 == 0)
+		if (number % i == 0)
 		{
-			while (number % 1 == 0)
+			while (number % i == 0)
 			{
-				number /= 1;
+				number /= i;
 			}
 			largest = i;
 
