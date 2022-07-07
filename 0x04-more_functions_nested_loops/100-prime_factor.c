@@ -21,6 +21,7 @@ int main(void)
 		i++;
 	}
 	printf("%lld", largest);
+	printf("\n");
 
 	return (0);
 }
