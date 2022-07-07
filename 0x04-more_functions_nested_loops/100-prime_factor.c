@@ -6,27 +6,23 @@
 
 int main(void)
 {
-	long prime = 612852475143, num;
+	long int number = 612852475143, largest = 0, i = 2;
 
-	while (num < (prime / 2))
+	while (number != 1)
 	{
-		if ((prime % 2) == 0)
+		if (number % 1 == 0)
 		{
-			prime /= 2;
-			continue;
-		}
-
-		for (num = 3; num < (num / 2); num += 2)
-		{
-			if ((prime % num) == 0)
+			while (number % 1 == 0)
 			{
-				prime /= num;
+				number /= 1;
 			}
+			largest = i;
+
 		}
-
-		printf("%ld", prime);
-		printf("\n");
-
-		return (0);
+		i++;
 	}
+	printf("%ld", largest);
+	printf("\n");
+
+	return (0);
 }
