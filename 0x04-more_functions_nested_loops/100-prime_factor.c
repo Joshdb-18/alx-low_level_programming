@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long long int n = 612852475143, largest = 0, i = 2;
+	long int n = 612852475143, largest = 0, i = 2;
 
 	while (n != 1)
 	{
@@ -20,7 +20,7 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%lld", largest);
+	printf("%ld", largest);
 	printf("\n");
 
 	return (0);
