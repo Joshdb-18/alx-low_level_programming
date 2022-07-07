@@ -25,6 +25,8 @@ void print_triangle(int size)
 			{
 				_putchar('#');
 			}
+			if (row == size)
+				continue;
 			_putchar('\n');
 		}
 		_putchar('\n');
