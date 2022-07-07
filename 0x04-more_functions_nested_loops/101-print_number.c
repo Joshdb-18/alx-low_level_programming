@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * print_number - print integer nmbers
  * @n: number
@@ -8,17 +7,17 @@
 
 void print_number(int n)
 {
-	int count;
+	unsigned int num = n;
 
-	for (count = 0; count < strlen(n); count++)
+	if (n < 0)
 	{
-		if (n[count] >= '0' && n[count] <= '9')
-		{
-			_putchar((n % 10) + '0');
-		}
-		else
-		{
-			_putchar(' ');
-		}
+		_putchar('-');
+		num = -num;
 	}
+
+	if ((num / 10) > 0)
+	{
+		print_number(num / 10);
+	}
+	_putchar((num % 10) + '0');
 }
