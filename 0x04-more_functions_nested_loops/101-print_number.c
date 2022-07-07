@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * print_number - print integer nmbers
  * @n: number
@@ -13,11 +14,11 @@ void print_number(int n)
 	{
 		if (n[count] >= '0' && n[count] <= '9')
 		{
-			return (n);
+			_putchar((n % 10) + '0');
 		}
 		else
 		{
-			return;
+			_putchar(' ');
 		}
 	}
 }
