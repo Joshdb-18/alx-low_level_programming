@@ -23,7 +23,7 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-       	while (*c)
+       	while (*s)
 	{
 		p = *c - '0';
 		if ( 0 <= p && 9 >= p)
