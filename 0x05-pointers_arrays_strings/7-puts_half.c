@@ -13,6 +13,7 @@ void puts_half(char *str)
 	int len = strlen(str);
 	int num = len / 2;
 	int sum = num + num;
+	int i;
 
 	for (i = num; i <= sum; i++)
 	{
