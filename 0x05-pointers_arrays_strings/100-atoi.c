@@ -11,7 +11,7 @@
 
 int _atoi(char *s)
 {
-	int number = atoi(s);
+	unsigned int number = atoi(s);
 	
 	if (number < 0)
 	{
