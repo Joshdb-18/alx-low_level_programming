@@ -25,7 +25,7 @@ int _atoi(char *s)
 	}
        	while (*s)
 	{
-		p = *c - '0';
+		p = *s - '0';
 		if ( 0 <= p && 9 >= p)
 		{
 			num = num * 10 + p;
