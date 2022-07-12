@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _puts2 - prints every other character of a string
+ * puts2 - prints every other character of a string
  *
  * @str - function parameter
  *
  * Return: void
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int length, i = 0;
 
