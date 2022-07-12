@@ -3,7 +3,7 @@
 /**
  * _strcpy - copies strings
  * @dest: first para
- * @src - second para
+ * @src: second para
  * Return: 0
  */
 
