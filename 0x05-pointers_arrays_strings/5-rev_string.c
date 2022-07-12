@@ -10,12 +10,13 @@
 
 void rev_string(char *s)
 {
-	int k;
-	char *school = s;
+	int len = 0, i = 0;
 
-	for (k = strlen(s); k != '\0'; k--)
-	{
-		*school = s[k];
-	}
-	printf("\n");
+	while (s[i++])
+		len++;
+
+	for (i = len - 1; i >= 0; i--)
+		_putchar(s[i]);
+
+	_putchar('\n');
 }
