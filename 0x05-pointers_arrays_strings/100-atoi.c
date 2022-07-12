@@ -12,6 +12,10 @@
 int _atoi(char *s)
 {
 	int number = atoi(s);
-
+	
+	if (atoi(s) < 0)
+	{
+		number = -number;
+	}
 	return (number);
 }
