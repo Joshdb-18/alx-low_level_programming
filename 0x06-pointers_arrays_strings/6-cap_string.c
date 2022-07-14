@@ -8,15 +8,25 @@
  */
 char *cap_string(char *str)
 {
-	int k, n;
+	int k, n = 1;
 	char *cap = str;
+	char a[] = " \t\n,.!?\"(){}";
 
-	for (k = 0, n = strlen(str); k < n; k++)
+	while (*str)
 	{
-		if (str[k] == ' ' || str[k] == '\n')
+		if (n && *str >= 'a' && *str <= 'z')
 		{
-			str[k + 1] = toupper(str[k + 1]);
+			*str -= 32;
+		}
+		n = 0;
+		for (k = 0; k < 12; k++)
+		{
+			if (*str == a[k])
+			{
+				n = 1;
+			}
+			str++;
 		}
 	}
-	return (cap);
+	return cap;
 }
