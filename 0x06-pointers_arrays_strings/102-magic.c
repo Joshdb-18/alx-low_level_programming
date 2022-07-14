@@ -1,9 +1,4 @@
 #include <stdio.h>
-/**
- * main - main func
- *
- * Return: 0
- */
 
 int main(void)
 {
@@ -14,7 +9,7 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 	/*
-	 * write your line of code here...
+	 * write your line of code here..i.
 	 * Remember:
 	 * - you are not allowed to use a
 	 * - you are not allowed to modify p
