@@ -6,16 +6,16 @@
  * @str: func para
  * Return: upper
  */
-char *string_toupper(char *str);
+char *string_toupper(char *str)
 {
 	int i;
 	char *s = str;
 
 	for (i = strlen(str); i > '\0'; i--)
 	{
-		if (str[i] >= 'a' && str[k] <= 'z')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			str[k] = toupper(str[k]);
+			str[i] = toupper(str[i]);
 		}
 	}
 	return (s);
