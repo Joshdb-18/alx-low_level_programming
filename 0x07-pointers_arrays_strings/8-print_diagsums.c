@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagsums - prints thee sum of two diagonals 
- 		    of a square matrix of integers
+ * print_diagsums - prints thee sum of two diagonals
  * @a: func para
  * @size: second func para
  * Return: void
@@ -10,7 +9,7 @@
 
 void print_diagsums(int *a, int size)
 {
- int i, sum1 = 0, sum2 = 0;
+	int i, sum1 = 0, sum2 = 0;
 
 	for (i = 0; i < (size * size); i++)
 	{
