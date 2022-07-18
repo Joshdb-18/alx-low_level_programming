@@ -4,8 +4,7 @@
  * _strstr - locates a substring
  * @haystack: func para
  * @needle: second func para
- * Return: a pointer to the beginning of the located substring
- 	   or NULL if substring not found
+ * Return: a pointer to the beginning of the located substring or NULL
  *
  */
 
