@@ -1,5 +1,5 @@
 #include "main.h"
-#include <math.h>
+
 /**
  * _pow_recursion - returns a power value
  * @x: func para
@@ -17,5 +17,5 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	return (pow(x, y));
+	return (x * _pow_recursion(x, y - 1));
 }

@@ -1,5 +1,23 @@
 #include "main.h"
-#include <math.h>
+
+/**
+ * sqt - returns natural...
+ * @m: input
+ * @d: itr
+ * Return: sqrt
+ */
+int sqt(int m, int d)
+{
+	if (d % (m / d) == 0)
+	{
+		if (d * (m / d) == m)
+			return (d);
+		else
+			return (-1);
+	}
+	return (0 + sqt(m, d + 1));
+}
+
 /**
  * _sqrt_recursion - returns natural square root of a number
  * @n: func para
@@ -10,9 +28,9 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 	{
-		return (1);
+		return (0);
 	}
 	else if (n < 0)
 		return (-1);
-	return (sqrt(n));
+	return (sqt(n, 2));
 }
