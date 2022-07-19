@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * wildcmp - compares two strings
+ * wildcmp - compares strings
  * @s1: func para
  * @s2: second func para
  * Return: 1 or 0
