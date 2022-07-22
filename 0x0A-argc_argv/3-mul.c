@@ -9,7 +9,6 @@
 int main(int argc, char *argv[])
 {
 	int num = argc;
-	int i;
 	
 	if (num != 3)
 	{
