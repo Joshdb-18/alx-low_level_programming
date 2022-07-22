@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		for (j = 1; j <= (argc - 1); j++)
 		{
 			dig = atoi(argv[j]);
-			if (dig == 0)
+			if (dig == 0 && (dig < '0' || dig > '9'))
 			{
 				printf("Error\n");
 				return (1);
