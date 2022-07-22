@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int quarters, dimes, nickels, coins;
+		int quarters, dimes, nickels, two, pennies, coins;
 
 		quarters = calculate_quarters(cents);
 		cents = cents - quarters * 25;
@@ -31,6 +31,10 @@ int main(int argc, char *argv[])
 		cents = cents - dimes * 10;
 		nickels = calculate_nickels(cents);
 		cents = cents - nickels * 5;
+		two = calculate_twos(cents);
+		cents = cents - two * 2;
+		pennies = calculate_pennies(cents);
+		cents = cents - pennies * 1;
 		coins = quarters + dimes + nickels;
 		printf("%d\n", coins);
 	}
@@ -103,19 +107,6 @@ int calculate_nickels(int cents)
 	while (cents >= 5)
 	{
 		cents -= 5;
-		count++;
-	}
-	return (count);
-
-	while (cents >= 2)
-	{
-		cents -= 2;
-		count++;
-	}
-	return (count);
-	while (count >= 1)
-	{
-		cents -= 1;
 		count++;
 	}
 	return (count);
