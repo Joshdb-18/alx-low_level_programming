@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int len = atoi(argv[argc - 1]);
+	argv = argv;
 
-	printf("%d\n", len + 1);
+	printf("%d\n", argc - 1);
 	return (0);
 }

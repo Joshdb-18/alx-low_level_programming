@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int num = argc;
-	int digit1, digit2;
+	int digit1, digit2, digit3;
 	
 	if (num != 3)
 	{
@@ -20,8 +20,10 @@ int main(int argc, char *argv[])
 	{
 		digit1 = atoi(argv[1]);
 		digit2 = atoi(argv[2]);
+		digit3 = digit1 * digit2;
 
-		printf("%d\n", digit1 * digit2);
+		printf("%d\n", digit3);
 		return (0);
 	}
+	return (0);
 }
