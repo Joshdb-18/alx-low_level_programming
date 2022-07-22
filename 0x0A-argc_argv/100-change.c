@@ -45,6 +45,11 @@ int main(int argc, char *argv[])
 				dib -= 5;
 				count++;
 			}
+			while (dib >= 2)
+			{
+				dib -= 2;
+				count++;
+			}
 			while (dib >= 1)
 			{
 				dib -= 1;
