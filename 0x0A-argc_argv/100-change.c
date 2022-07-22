@@ -9,7 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int cents = get_cents(argc, argv[1]);
+	int cents;
+       	cents = get_cents(argc, argv[1]);
 
 	if (cents == 0)
 	{
@@ -21,25 +22,22 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int quarters = calculate_quarters(cents);
+		int quarters, dimes, nickels, two, pennies, coins;
+
+	       	quarters = calculate_quarters(cents);
 		cents = cents - quarters * 25;
-
-		int dimes = calculate_dimes(cents);
+		dimes = calculate_dimes(cents);
 		cents = cents - dimes * 10;
-
-		int nickels = calculate_nickels(cents);
+		nickels = calculate_nickels(cents);
 		cents = cents - nickels * 5;
-
-		int two = calculate_twos(cents);
+		two = calculate_twos(cents);
 		cents = cents - two * 2;
-
-		int pennies = calculate_pennies(cents);
+		pennies = calculate_pennies(cents);
 		cents = cents - pennies * 1;
-
-		int coins = quarters + dimes + nickels + two + pennies;
-
+		coins = quarters + dimes + nickels + two + pennies;
 		printf("%d\n", coins);
 	}
+	return (0);
 }
 
 /**
@@ -54,7 +52,7 @@ int get_cents(int argc, char *argv)
 		return (1);
 	else
 	{
-		int count = 0, cents;
+		int cents;
 		
 		cents = atoi(argv);
 		if (cents < 0)
