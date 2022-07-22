@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int num = argc;
+	int digit1, digit2;
 	
 	if (num != 3)
 	{
@@ -17,8 +18,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int digit1 = atoi(argv[1]);
-		int digit2 = atoi(argv[2]);
+		digit1 = atoi(argv[1]);
+		digit2 = atoi(argv[2]);
 
 		printf("%d\n", digit1 * digit2);
 		return (0);

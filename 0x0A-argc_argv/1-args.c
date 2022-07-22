@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints the number of arguments passed
  * @argc: argument count
@@ -7,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int num = argc;
+	int len = atoi(argv[argc - 1]);
 
-	printf("%s\n", argv[num]);
+	printf("%d\n", len + 1);
 	return (0);
 }
