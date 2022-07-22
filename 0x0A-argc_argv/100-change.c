@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int quarters, dimes, nickels, two, pennies, coins;
+		int quarters, dimes, nickels, coins;
 
 		quarters = calculate_quarters(cents);
 		cents = cents - quarters * 25;
@@ -31,11 +31,7 @@ int main(int argc, char *argv[])
 		cents = cents - dimes * 10;
 		nickels = calculate_nickels(cents);
 		cents = cents - nickels * 5;
-		two = calculate_twos(cents);
-		cents = cents - two * 2;
-		pennies = calculate_pennies(cents);
-		cents = cents - pennies * 1;
-		coins = quarters + dimes + nickels + two + pennies;
+		coins = quarters + dimes + nickels;
 		printf("%d\n", coins);
 	}
 	return (0);
@@ -49,9 +45,10 @@ int main(int argc, char *argv[])
  */
 int get_cents(int argc, char *argv)
 {
+	int cents;
+
 	if (argc < 2 || argc > 2)
 		return (1);
-	int cents;
 
 	cents = atoi(argv);
 	if (cents < 0)
@@ -109,15 +106,6 @@ int calculate_nickels(int cents)
 		count++;
 	}
 	return (count);
-}
-/**
- * calculate_twos - 2
- * @cents: func para
- * Return: count
- */
-int calculate_twos(int cents)
-{
-	int count = 0;
 
 	while (cents >= 2)
 	{
@@ -125,17 +113,7 @@ int calculate_twos(int cents)
 		count++;
 	}
 	return (count);
-}
-/**
- * calculate_pennies - 1
- * @cents: function para
- * Return: count
- */
-int calculate_pennies(int cents)
-{
-	int count = 0;
-
-	while (cents >= 1)
+	while (count >= 1)
 	{
 		cents -= 1;
 		count++;
