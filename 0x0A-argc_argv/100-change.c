@@ -1,65 +1,148 @@
-#include <stdlib.h>
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - cash
+ * main - the main func
  * @argc: argument count
  * @argv: argument vector
- * Return: depends xd
+ * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
-	if (argc < 2 || argc > 2)
+	int cents = get_cents(argc, argv[1]);
+
+	if (cents == 0)
+	{
+		printf("0\n");
+	}
+	else if (cents == -1 || cents == 1)
 	{
 		printf("Error\n");
-		return (1);
 	}
 	else
 	{
-		int count = 0, dib;
+		int quarters = calculate_quarters(cents);
+		cents = cents - quarters * 25;
 
-		dib = atoi(argv[1]);
-		if (dib < 0)
-		{
-			printf("0\n");
-		}
-		else if (dib == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			while (dib >= 25)
-			{
-				dib -= 25;
-				count++;
-			}
-			while (dib >= 10)
-			{
-				dib -= 10;
-				count++;
-			}
-			while (dib >= 5)
-			{
-				dib -= 5;
-				count++;
-			}
-			while (dib >= 2)
-			{
-				dib -= 2;
-				count++;
-			}
-			while (dib >= 1)
-			{
-				dib -= 1;
-				count++;
-			}
-			printf("%d\n", count);
-			return (0);
-		}
-		return (0);
+		int dimes = calculate_dimes(cents);
+		cents = cents - dimes * 10;
+
+		int nickels = calculate_nickels(cents);
+		cents = cents - nickels * 5;
+
+		int two = calculate_twos(cents);
+		cents = cents - two * 2;
+
+		int pennies = calculate_pennies(cents);
+		cents = cents - pennies * 1;
+
+		int coins = quarters + dimes + nickels + two + pennies;
+
+		printf("%d\n", coins);
 	}
-	return (0);
 }
+
+/**
+ * get_cents - gets the number of cents
+ * @argc: first parameter
+ * @argv: string parameter
+ * Return: depends
+ */
+int get_cents(int argc, char *argv)
+{
+	if (argc < 2 || argc > 2)
+		return (1);
+	else
+	{
+		int count = 0, cents;
 		
+		cents = atoi(argv);
+		if (cents < 0)
+			return (0);
+		else if (cents == 0)
+			return (-1);
+		return (cents);
+	}
+}
+/**
+ * calculate_quarters - 25
+ * @cents: func para
+ * Return: count
+ */
+int calculate_quarters(int cents)
+{
+	int count = 0;
+
+	while (cents >= 25)
+	{
+		cents -= 25;
+		count++;
+	}
+	return (count);
+}
+
+/**
+ * calculate_dimes - 10
+ * @cents: func para
+ * Return: count
+ */
+int calculate_dimes(int cents)
+{
+	int count = 0;
+
+	while (cents >= 10)
+	{
+		cents -= 10;
+		count++;
+	}
+	return (count);
+}
+
+/**
+ * calculate_nickels - 5
+ * @cents: func para
+ * Return: count
+ */
+int calculate_nickels(int cents)
+{
+	int count = 0;
+
+	while (cents >= 5)
+	{
+		cents -= 5;
+		count++;
+	}
+	return (count);
+}
+/**
+ * calculate_twos - 2
+ * @cents: func para
+ * Return: count
+ */
+int calculate_twos(int cents)
+{
+	int count = 0;
+
+	while (cents >= 2)
+	{
+		cents -= 2;
+		count++;
+	}
+	return (count);
+}
+/**
+ * calculate_pennies - 1
+ * @cents: function para
+ * Return: count
+ */
+int calculate_pennies(int cents)
+{
+	int count = 0;
+
+	while (cents >= 1)
+	{
+		cents -= 1;
+		count++;
+	}
+	return (count);
+}
