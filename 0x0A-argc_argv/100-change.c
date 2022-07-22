@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
 	int cents;
-       	cents = get_cents(argc, argv[1]);
+
+	cents = get_cents(argc, argv[1]);
 
 	if (cents == 0)
 	{
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
 	{
 		int quarters, dimes, nickels, two, pennies, coins;
 
-	       	quarters = calculate_quarters(cents);
+		quarters = calculate_quarters(cents);
 		cents = cents - quarters * 25;
 		dimes = calculate_dimes(cents);
 		cents = cents - dimes * 10;
@@ -50,17 +51,14 @@ int get_cents(int argc, char *argv)
 {
 	if (argc < 2 || argc > 2)
 		return (1);
-	else
-	{
-		int cents;
-		
-		cents = atoi(argv);
-		if (cents < 0)
-			return (0);
-		else if (cents == 0)
-			return (-1);
-		return (cents);
-	}
+	int cents;
+
+	cents = atoi(argv);
+	if (cents < 0)
+		return (0);
+	else if (cents == 0)
+		return (-1);
+	return (cents);
 }
 /**
  * calculate_quarters - 25
