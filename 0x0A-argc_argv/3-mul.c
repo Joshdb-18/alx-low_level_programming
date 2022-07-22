@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 	{
 		int digit1 = atoi(argv[1]);
 		int digit2 = atoi(argv[2]);
+
 		printf("%d\n", digit1 * digit2);
 		return (0);
 	}
