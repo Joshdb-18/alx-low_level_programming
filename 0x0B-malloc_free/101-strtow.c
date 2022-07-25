@@ -33,7 +33,7 @@ char **strtow(char *str)
 	int i, r = 0, words;
 	char **chr;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 		return (NULL);
 	words = wordcount(str);
 	if (!words)
