@@ -4,6 +4,7 @@
  * argstostr - concatenates arguments
  * @ac: integer para
  * @av: char para
+ * Return: NULL or pointer
  */
 char *argstostr(int ac, char **av)
 {
@@ -26,7 +27,7 @@ char *argstostr(int ac, char **av)
 		for (i = 0; i < ac; i++)
 		{
 			for (j = 0; av[i][j]; j++, p++)
-				str[i] = av[i][j];
+				str[p] = av[i][j];
 			str[p++] = '\n';
 		}
 		str[p] = '\0';
