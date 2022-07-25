@@ -11,17 +11,18 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	char *str;
+
 	if (s1 == NULL)
 	{
-		return (strcat("", s2));
+		str = malloc(sizeof(s2));
+		str = strcat("", s2);
 	}
 	else if (s2 == NULL)
 	{
-		return (strcat(s1, ""));
+		str = malloc(sizeof(s1));
+		str = strcat(s1, "");
 	}
-	else
-	{
-		return (strcat(s1, s2));
-	}
-	return (NULL);
+	return (str);
+	
 }
