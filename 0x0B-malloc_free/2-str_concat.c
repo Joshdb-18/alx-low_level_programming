@@ -13,11 +13,15 @@ char *str_concat(char *s1, char *s2)
 {
 	if (s1 == NULL)
 	{
-		return (NULL);
+		return (strcat("", s2));
 	}
 	else if (s2 == NULL)
 	{
-		return (NULL);
+		return (strcat(s1, ""));
 	}
-	return (strcat(s1, s2));
+	else
+	{
+		return (strcat(s1, s2));
+	}
+	return (NULL);
 }
