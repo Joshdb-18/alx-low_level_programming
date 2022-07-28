@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -78,7 +79,7 @@ int get_digit(char c)
 {
 	int digit = c - '0';
 
-	if (digit < 0 || digit > 9)
+	if (digit > 9)
 	{
 		return (98);
 	}
