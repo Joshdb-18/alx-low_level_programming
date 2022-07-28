@@ -33,7 +33,7 @@ int num_checker(char *a)
  */
 int main(int argc, char *argv[])
 {
-	int num, num2, total;
+	unsigned long long int num, num2, total;
 
 	if (argc != 3)
 	{
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	total = num * num2;
-	printf("%d\n", total);
+	printf("%lld\n", total);
 
 	return (0);
 }
