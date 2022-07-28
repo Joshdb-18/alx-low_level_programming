@@ -13,7 +13,7 @@ char *strmul(char *a, char *b);
  * @nmemb: number of elements
  * @size: number of bytes per element
  *
- * Return: pointer to memory, or NULL if `nmemb' or `size' is 0 or malloc fails
+ * Return: pointer to memory, or NULL if `nmemb' or `size' is 0 or malloc fail
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
