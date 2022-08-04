@@ -36,7 +36,7 @@ void real(va_list arg)
 }
 /**
  * string - prints string
- * @arrg: argument
+ * @arg: argument
  */
 void string(va_list arg)
 {
