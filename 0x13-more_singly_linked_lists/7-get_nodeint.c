@@ -2,6 +2,7 @@
 /**
  * get_nodeint_at_index - gets a node of a linked list
  * @head: pointer to list
+ * @index: index
  * Return: located node or NULL
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
