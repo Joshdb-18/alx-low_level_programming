@@ -1,1 +1,2 @@
 ## Structures and typedef in C
+![Struct](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/50af78a28a081e809856d4cdbde2d7ca9d4aa93d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221124%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221124T143822Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7afb012ad1e959357b76da07877abf743e3c373d1ce290ccf3a7196a3056270f)
