@@ -1,0 +1,7 @@
+# Test files
+
+## Compilation Example:
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 8-delete_dnodeint.c -o k
+
+```
